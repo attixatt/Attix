@@ -1031,6 +1031,50 @@ body {
 }
 
 /* =============================================
+   SEO SECTION
+   ============================================= */
+.seo-sect {
+  position: relative;
+  padding: 80px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slideUp 0.8s var(--ease) both;
+}
+
+.seo-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 189, 248, 0.08);
+  border-radius: 20px;
+  padding: 40px 32px;
+}
+
+.seo-h2 {
+  font-family: var(--ff-head);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.seo-p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* =============================================
    ABOUT SECTION
    ============================================= */
 .about-sect {
