@@ -27,10 +27,9 @@
       <div class="nav-actions">
         <button class="nav-pill" onclick="scrollToSection('hero')">Home</button>
         <button class="nav-pill" onclick="scrollToSection('tool')">Tool</button>
-        <button class="nav-pill nav-pill--cta" onclick="scrollToSection('tool')">
-          Get Started
-          <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2.5 6.5h8M6.5 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
+        <button class="nav-pill" onclick="scrollToSection('about')">About</button>
+        <button class="nav-pill" onclick="scrollToSection('privacy')">Privacy</button>
+        <button class="nav-pill" onclick="scrollToSection('contact')">Contact</button>
       </div>
 
       <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
@@ -40,7 +39,9 @@
     <div class="mobile-nav" id="mobileNav">
       <button class="mob-btn" onclick="scrollToSection('hero')">Home</button>
       <button class="mob-btn" onclick="scrollToSection('tool')">Tool</button>
-      <button class="mob-btn mob-btn--cta" onclick="scrollToSection('tool')">Get Started →</button>
+      <button class="mob-btn" onclick="scrollToSection('about')">About</button>
+      <button class="mob-btn" onclick="scrollToSection('privacy')">Privacy</button>
+      <button class="mob-btn" onclick="scrollToSection('contact')">Contact</button>
     </div>
   </nav>
 
@@ -62,21 +63,22 @@
         </div>
 
         <h1 class="hero-h1">
-          Track Your<br />
-          <em class="hero-em">Attendance.</em><br />
-          Stay&nbsp;Safe.
+          Track Your Attendance &<br />
+          Never Fall Below <em class="hero-em">75%</em>
         </h1>
 
         <p class="hero-p">
-          Real-time attendance calculator with bunk prediction.
-          Know exactly how many classes you can skip — and how many
-          you must attend — before it's too late.
+          Smart attendance calculator with bunk prediction.
+          Plan your classes and avoid shortage.
         </p>
 
         <div class="hero-ctas">
           <button class="cta-primary" onclick="scrollToSection('tool')">
-            <span>Start Calculating</span>
+            <span>Check My Attendance</span>
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="cta-secondary" onclick="scrollToSection('tool')">
+            <span>Try Live Demo</span>
           </button>
         </div>
 
@@ -186,7 +188,7 @@
         <button class="gbtn" id="calcBtn" onclick="calculate()">
           <span class="gbtn-glow"></span>
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="6" height="6" rx="1.5" fill="currentColor"/><rect x="10" y="2" width="6" height="6" rx="1.5" fill="currentColor" opacity="0.5"/><rect x="2" y="10" width="6" height="6" rx="1.5" fill="currentColor" opacity="0.5"/><rect x="10" y="10" width="6" height="6" rx="1.5" fill="currentColor"/></svg>
-          Calculate
+          Predict My Attendance
         </button>
 
         <!-- ─── RESULT ─── -->
@@ -241,6 +243,102 @@
 
   </section>
 
+  <!-- ─── ABOUT SECTION ─── -->
+  <section class="about-sect" id="about">
+    <div class="about-bg-glow"></div>
+    <div class="about-inner">
+      <h2 class="about-h2">About Attix</h2>
+      <p class="about-p">
+        Attix is an intelligent attendance tracking system built for students who want control over their academic performance. It not only calculates your attendance percentage but also predicts how many classes you can safely skip — helping you stay above required limits without stress.
+      </p>
+
+      <div class="feature-grid">
+        <div class="fcard">
+          <div class="fcard-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 class="fcard-h3">Smart Prediction</h3>
+          <p class="fcard-p">Know exactly how many classes you can skip without dropping below 75%.</p>
+        </div>
+        <div class="fcard">
+          <div class="fcard-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="fcard-h3">Real-Time Calculation</h3>
+          <p class="fcard-p">Instantly calculate your attendance and plan ahead.</p>
+        </div>
+        <div class="fcard">
+          <div class="fcard-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="fcard-h3">Stress-Free Planning</h3>
+          <p class="fcard-p">Avoid last-minute panic with accurate attendance insights.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRIVACY SECTION ─── -->
+  <section class="text-sect" id="privacy">
+    <div class="text-inner">
+      <h2 class="text-h2">Privacy Policy</h2>
+      <p class="text-p">
+        Attix does not collect, store, or share any personal data. All calculations are performed locally in your browser. Your information remains completely private and secure.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT SECTION ─── -->
+  <section class="text-sect" id="contact">
+    <div class="text-inner">
+      <h2 class="text-h2">Contact</h2>
+      <p class="text-p">
+        For any queries related to Attix, feel free to reach out.
+      </p>
+      <a href="mailto:attixatt@gmail.com" class="contact-email">attixatt@gmail.com</a>
+    </div>
+  </section>
+
+  <!-- ─── UXIO BUSINESS SECTION ─── -->
+  <section class="uxio-sect" id="uxio">
+    <div class="uxio-inner">
+      <h2 class="uxio-h2">Need a Website Like This?</h2>
+      <p class="uxio-p">
+        I design modern, high-quality websites and graphics for students, creators, and startups.
+      </p>
+
+      <div class="uxio-services">
+        <span class="uxio-tag">Web Design</span>
+        <span class="uxio-tag">Graphic Design</span>
+        <span class="uxio-tag">UI/UX Design</span>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pcard">
+          <h3 class="pcard-tier">Basic Website</h3>
+          <div class="pcard-price">₹499</div>
+        </div>
+        <div class="pcard pcard-popular">
+          <div class="pcard-badge">Most Popular</div>
+          <h3 class="pcard-tier">Standard Website</h3>
+          <div class="pcard-price">₹999</div>
+        </div>
+        <div class="pcard">
+          <h3 class="pcard-tier">Premium UI</h3>
+          <div class="pcard-price">₹1999</div>
+        </div>
+      </div>
+
+      <div class="uxio-actions">
+        <a href="mailto:uxio.design.01@gmail.com" class="uxio-btn uxio-btn-primary">Get Your Website</a>
+        <a href="https://instagram.com/uxio.design" target="_blank" class="uxio-btn uxio-btn-outline">Instagram: uxio.design</a>
+      </div>
+      <div class="uxio-contact-text">
+        Email: <a href="mailto:uxio.design.01@gmail.com">uxio.design.01@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ─── FOOTER ─── -->
   <footer class="site-footer">
     <div class="sfooter-inner">
@@ -250,7 +348,13 @@
         </div>
         <span>ATTIX</span>
       </div>
-      <p>Built for students who play it smart.</p>
+      <div class="sfooter-links">
+        <button onclick="scrollToSection('about')">About</button>
+        <button onclick="scrollToSection('privacy')">Privacy</button>
+        <button onclick="scrollToSection('contact')">Contact</button>
+      </div>
+      <p class="sfooter-copy">Attix &copy; 2026</p>
+      <p class="sfooter-uxio">Built with UXIO</p>
     </div>
   </footer>
 

@@ -278,10 +278,9 @@ function renderResult(percentage, isSafe, insightHTML) {
       // Percentage color
       bigPct.style.color = isSafe ? 'var(--success)' : 'var(--danger)';
 
-      // Status badge
       badge.className = 'status-badge ' + (isSafe ? 'safe' : 'danger');
       badgeEmoji.textContent = isSafe ? '✓' : '✗';
-      badgeText.textContent  = isSafe ? 'You\'re Safe' : 'Below Limit';
+      badgeText.textContent  = isSafe ? "You're safe to relax" : "Warning: Attendance dropping";
 
       // Insight
       insightMsg.innerHTML = insightHTML;
